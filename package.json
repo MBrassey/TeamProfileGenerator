@@ -1,0 +1,28 @@
+{
+  "name": "TeamProfileGenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "jest": "^26.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MBrassey/TeamProfileGenerator.git"
+  },
+  "keywords": [],
+  "author": "Matt Brassey",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/MBrassey/TeamProfileGenerator/issues"
+  },
+  "homepage": "https://github.com/MBrassey/TeamProfileGenerator#readme"
+}
