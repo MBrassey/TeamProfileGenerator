@@ -7,10 +7,11 @@
     "lib": "lib"
   },
   "dependencies": {
-    "inquirer": "^7.3.3",
+    "inquirer": "^7.3.3"
+  },
+  "devDependencies": {
     "jest": "^26.5.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "jest"
   },
