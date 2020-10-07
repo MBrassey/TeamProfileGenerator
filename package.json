@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "dependencies": {
-    "inquirer": "^7.3.3"
+    "inquirer": "^7.3.3",
+    "is-github-url": "^1.2.2"
   },
   "devDependencies": {
     "jest": "^26.5.0"

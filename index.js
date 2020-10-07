@@ -1,5 +1,6 @@
 const { conditionalExpression } = require("@babel/types");
 const inquirer = require("inquirer");
+var isGithubUrl = require("is-github-url");
 
 // Import Classes
 const Employee = require("./lib/Employee.js");
@@ -35,11 +36,24 @@ const emailValidator = async (input) => {
     return "Enter an e-mail address!";
   }
 };
-const idValidator = async (input) => {
+const numberValidator = async (input) => {
   if (isNaN(input) || input == "") {
-    return "Enter office Number!";
+    return "Expecting a number!";
   }
   return true;
+};
+const githubValidator = async (input) => {
+  if (!isGithubUrl(input) || input == "") {
+    return "Expecting a GitHub URL!";
+  }
+  return true;
+};
+const schoolValidator = async (input) => {
+  if (input !== input.toUpperCase()) {
+    return "Expecting Capitalized University Initials";
+  } else {
+    return true;
+  }
 };
 
 // Support Functions
@@ -71,7 +85,7 @@ const promptUser = () => {
         type: "input",
         message: "Enter employee ID:",
         name: "id",
-        validate: idValidator,
+        validate: numberValidator,
       },
       {
         type: "list",
@@ -89,6 +103,7 @@ const promptUser = () => {
                 type: "input",
                 message: "Office number:",
                 name: "office",
+                validate: numberValidator,
               },
             ])
             .then(function (managerData) {
@@ -111,8 +126,9 @@ const promptUser = () => {
             .prompt([
               {
                 type: "input",
-                message: "GitHub username:",
+                message: "GitHub URL:",
                 name: "github",
+                validate: githubValidator,
               },
             ])
             .then(function (engineerData) {
@@ -137,6 +153,7 @@ const promptUser = () => {
                 type: "input",
                 message: "School:",
                 name: "school",
+                validate: schoolValidator,
               },
             ])
             .then(function (internData) {
