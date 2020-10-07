@@ -208,7 +208,7 @@ function init() {
     -h          Display this message.
     -v          Show version.
     -l          Show license info.
-    -a          What is TeamPorofileGenerator?
+    -a          What is TeamProfileGenerator?
 `);
   } else if (arg === "-v") {
     console.log("TeamProfileGenerator Version: " + version + ".");
@@ -218,7 +218,7 @@ function init() {
     );
   } else if (arg === "-a") {
     console.log(
-      "Dev team portfolio generator written in Node.js following the Test Driven Development model with jest."
+      "Dev team profile generator written in Node.js following the Test Driven Development model with jest."
     );
   } else {
     promptUser();

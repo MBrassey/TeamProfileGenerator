@@ -29,7 +29,7 @@ Dev team profile generator written in Node.js following the Test Driven Developm
     -h          Display this message.
     -v          Show version.
     -l          Show license info.
-    -a          What is TeamPorofileGenerator?
+    -a          What is TeamProfileGenerator?
 
 [<p align="center"><img src="lib/Preview.gif">](https://mbrassey.github.io/TeamProfileGenerator/)
 
