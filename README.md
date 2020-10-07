@@ -35,6 +35,8 @@ Dev team profile generator written in Node.js following the Test Driven Developm
 
 [<p align="center"><img src="lib/Preview.gif">](https://mbrassey.github.io/TeamProfileGenerator/)
 
+[<p align="center"><img src="lib/Preview1.png">](https://mbrassey.github.io/TeamProfileGenerator/)
+
 [<p align="center"><img src="lib/Preview.png">](https://mbrassey.github.io/TeamProfileGenerator/)
 
 #### Questions
