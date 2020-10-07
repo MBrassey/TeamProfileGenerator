@@ -33,8 +33,8 @@ const promptUser = () => {
       },
       {
         type: "list",
-        name: "role",
         message: "Position:",
+        name: "role",
         choices: ["Manager", "Engineer", "Intern"],
       },
     ])
