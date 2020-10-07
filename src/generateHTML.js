@@ -55,7 +55,7 @@ function generateHTML(data) {
         }
         #head {
             background-color: var(--Anthracite);
-            color: var(--Sky);
+            color: var(--Zinc);
             font-family: "Aldrich", sans-serif;
           }
         #tab {
