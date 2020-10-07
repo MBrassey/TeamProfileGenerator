@@ -6,10 +6,10 @@ Dev team portfolio generator written in Node.js following the Test Driven Develo
 
 #### Issues
 
-- [x] [Create & Test Employee Class](https://github.com/MBrassey/TeamPortfolioGenerator/issues/1)
-- [x] [Create & Test Remaining Classes](https://github.com/MBrassey/TeamPortfolioGenerator/issues/2)
-- [x] [Validate Input & Generate HTML](https://github.com/MBrassey/TeamPortfolioGenerator/issues/3)
-- [x] [Refactor / Finishing Touches](https://github.com/MBrassey/TeamPortfolioGenerator/issues/4)
+- [x] [Create & Test Employee Class](https://github.com/MBrassey/TeamProfileGenerator/issues/1)
+- [x] [Create & Test Remaining Classes](https://github.com/MBrassey/TeamProfileGenerator/issues/2)
+- [x] [Validate Input & Generate HTML](https://github.com/MBrassey/TeamProfileGenerator/issues/3)
+- [x] [Refactor / Finishing Touches](https://github.com/MBrassey/TeamProfileGenerator/issues/4)
 
 #### Requirements
 
