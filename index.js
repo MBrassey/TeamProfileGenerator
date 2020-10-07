@@ -1,18 +1,16 @@
-const { conditionalExpression } = require("@babel/types");
+// Imports
 const inquirer = require("inquirer");
 const isGithubUrl = require("is-github-url");
-
-// const Employee = require("./lib/Employee.js");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
-const generateHTML = require("./src/generateHTML");
+const { generateHTML, writeFile } = require("./src/generateHTML");
 
 // Initialize Arrays
 const employees = [];
-const engineers = [];
-const interns = [];
-const managers = [];
+//const engineers = [];
+//const interns = [];
+//const managers = [];
 
 // Validation
 const nameValidator = async (input) => {
@@ -56,7 +54,7 @@ const schoolValidator = async (input) => {
   }
 };
 
-// Support Functions
+// Additional Functions
 const endQuestions = () => {
   console.log("End of questions!");
 
@@ -74,14 +72,15 @@ const endQuestions = () => {
       if (yn.add) {
         promptUser();
       } else {
-        console.log("Generating HTML ...");
         generate(employees);
       }
     });
 };
 function generate(employees) {
-  console.log("Generating HTML . . .");
-  console.log(employees);
+  console.log("Generating HTML ...");
+  const html = generateHTML(employees);
+  //console.log(html);
+  return writeFile(html);
 }
 
 // Get Employee Data
@@ -197,6 +196,7 @@ const promptUser = () => {
     });
 };
 
+// Initialize Application
 function init() {
   promptUser();
 }

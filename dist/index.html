@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DevTeam</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <style>
+      :root {
+        --Azure: #2994cb;
+        --Absinthe: #a3de9e;
+        --Sky: #394b59;
+        --Anthracite: #2a2a2a;
+        --Jet: #141414;
+        --Night: #181818;
+        --Stone: #6c757d;
+        --Zinc: #cfd2d0;
+        --Absinthe-alpha: rgba(163, 222, 158, 0.8);
+        --Shadow-Alpha: rgba(0, 0, 0, 0.5);
+      }
+      body {
+        background-color: var(--Zinc);
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .name {
+        font-size: 20px;
+        font-family: "Aldrich", sans-serif;
+        color: var(--Zinc);
+      }
+      .card {
+        flex: 1 0 300px;
+        box-sizing: border-box;
+      }
+      .cardbody {
+        font-family: "Play", sans-serif;
+        background-color: var(--Anthracite);
+        border-radius: 5px;
+        border-width: 1px;
+        box-shadow: var(--Absinthe-Alpha);
+        color: var(--Absinthe);
+        font-size: 18px;
+        padding: 20px 30px;
+        margin: 12px;
+      }
+      #head {
+        background-color: var(--Anthracite);
+        color: var(--Sky);
+        font-family: "Aldrich", sans-serif;
+      }
+      #tab {
+        background-color: var(--Sky);
+      }
+    </style>
+    <div class="jumbotron" id="head">
+      <h1 class="text-center">
+        <i class="fa fa-terminal"></i> Development Team
+      </h1>
+    </div>
+    <div class="container">
+      <div class="card cardbody">
+        <div class="card-header" id="tab">
+          <p class="name">Matt Brassey</p>
+          <div><i class="fa fa-user-tie"></i> Manager</div>
+        </div>
+        <div class="card-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="reserve-unique-id" id="reserve-unique-id"
+                >ID: 1
+              </label>
+            </div>
+            <div class="form-group">
+              <label for="reserve-email" id="reserve-email"
+                >Email: a@aa.com</label
+              >
+            </div>
+            <div class="form-group">
+              <label for="reserve-phone" id="github">Office Number: 1</label>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="card cardbody">
+        <div class="card-header" id="tab">
+          <p class="name">Auryn Horizon</p>
+          <div><i class="fa fa-user-ninja"></i> Engineer</div>
+        </div>
+        <div class="card-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="reserve-unique-id" id="reserve-unique-id"
+                >ID: 2
+              </label>
+            </div>
+            <div class="form-group">
+              <label for="reserve-email" id="reserve-email"
+                >Email: a@aa.com</label
+              >
+            </div>
+            <div class="form-group">
+              <label for="reserve-phone" id="github"
+                >Github:
+                <a href="https://github.com/MBrassey/">MBrassey</a></label
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="card cardbody">
+        <div class="card-header" id="tab">
+          <p class="name">Angela Brassey</p>
+          <div><i class="fa fa-user-graduate"></i> Intern</div>
+        </div>
+        <div class="card-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="reserve-unique-id" id="reserve-unique-id"
+                >ID: 3
+              </label>
+            </div>
+            <div class="form-group">
+              <label for="reserve-email" id="reserve-email"
+                >Email: a@aa.com</label
+              >
+            </div>
+            <div class="form-group">
+              <label for="reserve-phone" id="github">School: UAT</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
