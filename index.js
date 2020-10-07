@@ -5,6 +5,8 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
 const { generateHTML, writeFile } = require("./src/generateHTML");
+const arg = process.argv[2];
+const version = "1.0.0";
 
 // Initialize Arrays
 const employees = [];
@@ -198,7 +200,29 @@ const promptUser = () => {
 
 // Initialize Application
 function init() {
-  promptUser();
+  // Display Argument Data
+  if (arg === "-h") {
+    console.log(`
+    Usage: node index.js [ -h | -v | -l | -a ]
+    [options]
+    -h          Display this message.
+    -v          Show version.
+    -l          Show license info.
+    -a          What is TeamPortfolioGenerator?
+`);
+  } else if (arg === "-v") {
+    console.log("TeamPortfolioGenerator Version: " + version + ".");
+  } else if (arg === "-l") {
+    console.log(
+      "Published under the Creative Commons Zero v1.0 Universal License."
+    );
+  } else if (arg === "-a") {
+    console.log(
+      "Dev team portfolio generator written in Node.js following the Test Driven Development model with jest."
+    );
+  } else {
+    promptUser();
+  }
 }
 
 init();

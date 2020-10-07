@@ -1,6 +1,6 @@
 const Employee = require("../lib/Employee");
 
-test("Creates new Employee", () => {
+test("Creates Employee", () => {
   const i = new Employee();
   expect(typeof i).toBe("object");
 });
@@ -41,7 +41,7 @@ test("getEmail() Confirmed", () => {
   expect(i.getEmail()).toBe(testValue);
 });
 
-test('getRole() Returns "Employee"', () => {
+test("getRole() Confirmed", () => {
   const testValue = "Employee";
   const i = new Employee("Matt", 1, "matt@brassey.io");
   expect(i.getRole()).toBe(testValue);
