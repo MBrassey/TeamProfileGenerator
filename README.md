@@ -22,7 +22,7 @@ Dev team portfolio generator written in Node.js following the Test Driven Develo
 
 #### Usage
 
-    Usage: node index.js [ -h | -v | -l | -a ]
+    Usage: node app.js [ -h | -v | -l | -a ]
 
     [options]
 

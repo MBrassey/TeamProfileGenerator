@@ -203,7 +203,7 @@ function init() {
   // Display Argument Data
   if (arg === "-h") {
     console.log(`
-    Usage: node index.js [ -h | -v | -l | -a ]
+    Usage: node app.js [ -h | -v | -l | -a ]
     [options]
     -h          Display this message.
     -v          Show version.
