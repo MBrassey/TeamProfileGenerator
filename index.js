@@ -1,12 +1,12 @@
 const { conditionalExpression } = require("@babel/types");
 const inquirer = require("inquirer");
-var isGithubUrl = require("is-github-url");
+const isGithubUrl = require("is-github-url");
 
-// Import Classes
-const Employee = require("./lib/Employee.js");
-const Engineer = require("./lib/Engineer.js");
-const Intern = require("./lib/Intern.js");
-const Manager = require("./lib/Manager.js");
+// const Employee = require("./lib/Employee.js");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
+const Manager = require("./lib/Manager");
+const generateHTML = require("./src/generateHTML");
 
 // Initialize Arrays
 const employees = [];
@@ -59,8 +59,30 @@ const schoolValidator = async (input) => {
 // Support Functions
 const endQuestions = () => {
   console.log("End of questions!");
-  //console.log(data);
+
+  inquirer
+    .prompt([
+      {
+        type: "confirm",
+        name: "add",
+        message: "Add Another Employee?",
+        default: false,
+      },
+    ])
+    .then(function (yn) {
+      console.log(yn.add);
+      if (yn.add) {
+        promptUser();
+      } else {
+        console.log("Generating HTML ...");
+        generate(employees);
+      }
+    });
 };
+function generate(employees) {
+  console.log("Generating HTML . . .");
+  console.log(employees);
+}
 
 // Get Employee Data
 const promptUser = () => {
@@ -114,8 +136,8 @@ const promptUser = () => {
                 managerData.office,
                 "Manager"
               );
-              console.log(manager);
-              //employees.push(manager);
+              // console.log(manager);
+              employees.push(manager);
             })
             .then(function () {
               endQuestions();
@@ -139,8 +161,8 @@ const promptUser = () => {
                 engineerData.github,
                 "Engineer"
               );
-              console.log(engineer);
-              //employees.push(engineer);
+              // console.log(engineer);
+              employees.push(engineer);
             })
             .then(function () {
               endQuestions();
@@ -164,8 +186,8 @@ const promptUser = () => {
                 internData.school,
                 "Intern"
               );
-              console.log(intern);
-              //employees.push(intern);
+              // console.log(intern);
+              employees.push(intern);
             })
             .then(function () {
               endQuestions();
