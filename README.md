@@ -1,6 +1,6 @@
-## Team Portfolio Generator
+## Team Profile Generator
 
-Dev team portfolio generator written in Node.js following the Test Driven Development model with jest.
+Dev team profile generator written in Node.js following the Test Driven Development model with jest.
 
 ![licensebadge](https://img.shields.io/badge/license-CC0_1.0_Universal-blue)
 
@@ -29,7 +29,7 @@ Dev team portfolio generator written in Node.js following the Test Driven Develo
     -h          Display this message.
     -v          Show version.
     -l          Show license info.
-    -a          What is TeamPortfolioGenerator?
+    -a          What is TeamPorofileGenerator?
 
 [<p align="center"><img src="lib/Preview.gif">](https://mbrassey.github.io/TeamProfileGenerator/)
 
@@ -41,6 +41,6 @@ Contact me at [matt@brassey.io](mailto:matt@brassey.io) with any questions or co
 
 #### License
 
-`TeamPortfolioGenerator` is published under the **CC0_1.0_Universal** license.
+`TeamProfileGenerator` is published under the **CC0_1.0_Universal** license.
 
 > The Creative Commons CC0 Public Domain Dedication waives copyright interest in a work you've created and dedicates it to the world-wide public domain. Use CC0 to opt out of copyright entirely and ensure your work has the widest reach. As with the Unlicense and typical software licenses, CC0 disclaims warranties. CC0 is very similar to the Unlicense.

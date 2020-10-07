@@ -208,10 +208,10 @@ function init() {
     -h          Display this message.
     -v          Show version.
     -l          Show license info.
-    -a          What is TeamPortfolioGenerator?
+    -a          What is TeamPorofileGenerator?
 `);
   } else if (arg === "-v") {
-    console.log("TeamPortfolioGenerator Version: " + version + ".");
+    console.log("TeamProfileGenerator Version: " + version + ".");
   } else if (arg === "-l") {
     console.log(
       "Published under the Creative Commons Zero v1.0 Universal License."
