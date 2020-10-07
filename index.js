@@ -1,3 +1,4 @@
+const { conditionalExpression } = require("@babel/types");
 const inquirer = require("inquirer");
 
 // Import Classes
@@ -36,9 +37,15 @@ const emailValidator = async (input) => {
 };
 const idValidator = async (input) => {
   if (isNaN(input) || input == "") {
-    return "Enter a Number!";
+    return "Enter office Number!";
   }
   return true;
+};
+
+// Support Functions
+const endQuestions = () => {
+  console.log("End of questions!");
+  //console.log(data);
 };
 
 // Get Employee Data
@@ -62,7 +69,7 @@ const promptUser = () => {
       },
       {
         type: "input",
-        message: "Enter employee ID: ",
+        message: "Enter employee ID:",
         name: "id",
         validate: idValidator,
       },
@@ -74,7 +81,80 @@ const promptUser = () => {
       },
     ])
     .then(function (data) {
-      console.log(data);
+      switch (data.role) {
+        case "Manager":
+          inquirer
+            .prompt([
+              {
+                type: "input",
+                message: "Office number:",
+                name: "office",
+              },
+            ])
+            .then(function (managerData) {
+              const manager = new Manager(
+                data.name,
+                data.id,
+                data.email,
+                managerData.office,
+                "Manager"
+              );
+              console.log(manager);
+              //employees.push(manager);
+            })
+            .then(function () {
+              endQuestions();
+            });
+          break;
+        case "Engineer":
+          inquirer
+            .prompt([
+              {
+                type: "input",
+                message: "GitHub username:",
+                name: "github",
+              },
+            ])
+            .then(function (engineerData) {
+              const engineer = new Engineer(
+                data.name,
+                data.id,
+                data.email,
+                engineerData.github,
+                "Engineer"
+              );
+              console.log(engineer);
+              //employees.push(engineer);
+            })
+            .then(function () {
+              endQuestions();
+            });
+          break;
+        case "Intern":
+          inquirer
+            .prompt([
+              {
+                type: "input",
+                message: "School:",
+                name: "school",
+              },
+            ])
+            .then(function (internData) {
+              const intern = new Intern(
+                data.name,
+                data.id,
+                data.email,
+                internData.school,
+                "Intern"
+              );
+              console.log(intern);
+              //employees.push(intern);
+            })
+            .then(function () {
+              endQuestions();
+            });
+          break;
+      }
     });
 };
 
