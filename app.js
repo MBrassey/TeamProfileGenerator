@@ -70,7 +70,7 @@ const endQuestions = () => {
       },
     ])
     .then(function (yn) {
-      console.log(yn.add);
+      //console.log(yn.add);
       if (yn.add) {
         promptUser();
       } else {
