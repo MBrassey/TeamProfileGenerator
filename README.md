@@ -6,11 +6,10 @@ Dev team portfolio generator written in Node.js following the Test Driven Develo
 
 #### Issues
 
-- [x] [Create a Potion object](https://github.com/MBrassey/jest-another-RPG/issues/1)
-- [x] [Create a Player object](https://github.com/MBrassey/jest-another-RPG/issues/2)
-- [x] [Create an Enemy object](https://github.com/MBrassey/jest-another-RPG/issues/3)
-- [x] [Create a Game object](https://github.com/MBrassey/jest-another-RPG/issues/4)
-- [x] [Consolidate the code](https://github.com/MBrassey/jest-another-RPG/issues/5)
+- [x] [Create & Test Employee Class](https://github.com/MBrassey/TeamPortfolioGenerator/issues/1)
+- [x] [Create & Test Remaining Classes](https://github.com/MBrassey/TeamPortfolioGenerator/issues/2)
+- [x] [Validate Input & Generate HTML](https://github.com/MBrassey/TeamPortfolioGenerator/issues/3)
+- [x] [Refactor / Finishing Touches](https://github.com/MBrassey/TeamPortfolioGenerator/issues/4)
 
 #### Requirements
 
@@ -23,18 +22,18 @@ Dev team portfolio generator written in Node.js following the Test Driven Develo
 
 #### Usage
 
-    Usage: node app.js [ -h | -v | -l | -a ]
+    Usage: node index.js [ -h | -v | -l | -a ]
 
     [options]
 
     -h          Display this message.
     -v          Show version.
     -l          Show license info.
-    -a          What is jest-another-RPG?
+    -a          What is TeamPortfolioGenerator?
 
-[<p align="center"><img src="lib/Preview.png">](https://brassey.io/)
+[<p align="center"><img src="lib/Preview.gif">](https://mbrassey.github.io/TeamProfileGenerator/)
 
-[<p align="center"><img src="lib/Preview1.png">](https://brassey.io/)
+[<p align="center"><img src="lib/Preview.png">](https://mbrassey.github.io/TeamProfileGenerator/)
 
 #### Questions
 
