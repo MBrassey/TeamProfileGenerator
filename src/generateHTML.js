@@ -107,9 +107,9 @@ function makeManagerCard(data) {
                         } </label>
                     </div>
                     <div class="form-group">
-                      <label for="reserve-email" id="reserve-email">Email: ${
+                      <label for="reserve-email" id="reserve-email">Email: <a href="mailto:${
                         data.email
-                      }</label>
+                      }">${data.email}</a></label>
                     </div>
                     <div class="form-group">
                         <label for="reserve-phone" id="github">Office Number: ${
@@ -138,9 +138,9 @@ function makeEngineerCard(data) {
                               } </label>
                           </div>
                           <div class="form-group">
-                            <label for="reserve-email" id="reserve-email">Email: ${
-                              data.email
-                            }</label>
+                          <label for="reserve-email" id="reserve-email">Email: <a href="mailto:${
+                            data.email
+                          }">${data.email}</a>
                           </div>
                           <div class="form-group">
                               <label for="reserve-phone" id="github">Github: <a href="${
@@ -168,9 +168,9 @@ function makeInternCard(data) {
                         } </label>
                     </div>
                     <div class="form-group">
-                      <label for="reserve-email" id="reserve-email">Email: ${
-                        data.email
-                      }</label>
+                    <label for="reserve-email" id="reserve-email">Email: <a href="mailto:${
+                      data.email
+                    }">${data.email}</a>
                     </div>
                     <div class="form-group">
                         <label for="reserve-phone" id="github">School: ${
